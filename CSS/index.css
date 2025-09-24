@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --LightBlue: #3F6FB6;
+    --DarkBlue: #2D415F;
+    --Orange: #FF6400;
+    --DarkOrange: #FF5200;
+}
+
+* {margin: 0; padding: 0;}
+
+/* Styling for the texts/fonts */
+h1, h2, h3, h4, h5, h6, span, p {
+    color: black;
+    text-decoration: none;
+}
+h1 { font-size: 36px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+h6 { font-size: 8px; }
+p { font-size: 12px; }
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
+}
+
+/* Styling for default lists */
+.List {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+.List li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.List li a:hover {
+    text-decoration: underline;
+}
+.ListIcon {
+    color: #FFFFFF;
+    width: 18px;
+    height: 18px;
+}
+
+/* Styling for the default buttons */
+.btn {
+    width: fit-content;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    transition-duration: 300ms;
+}
+.btn-blue { background-color: var(--LightBlue); }
+.btn-blue:hover { background-color: var(--DarkBlue); }
+.btn-orange { background-color: var(--Orange); }
+.btn-orange:hover { background-color: var(--DarkOrange); }
+.btn-icon {
+    display: flex;
+    flex-direction: row;
+    color: var(--LightBlue);
+    border-bottom: 2px solid var(--LightBlue);
+    padding: 15px 10px;
+    align-content: center;
+    text-decoration: none;
+    transition-duration: 300ms;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-icon:hover {
+    color: var(--Orange);
+    border-color: var(--Orange);
+}
+
+/* Styling for the header navigation */
+.HeaderNav {
+    background-color: var(--LightBlue);
+}
+.Navigation {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px;
+}
+.NavigationGroup {
+    align-items: center;
+    display: flex;
+    padding: 12.5px 0;
+    gap: 25px;
+}
+.NavigationLogo {
+    width: 250px;
+}
+.NavItem {
+    list-style-type: none;
+}
+.NavItem a {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition-duration: 300ms;
+
+}
+.NavItem a:hover {
+    background-color: var(--DarkBlue);
+}
+.NavigationItems {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.NavItemIcon, .NavItemIcon img {
+    width: 25px;
+}
+.NavItemIcon img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.PageBody {
+    padding: 0 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 3;
+    gap: 25px;
+    
+}
+/* Styling for the home page News posts */
+.NewsTest {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 75%;
+}
+.NewsTest article {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    max-height: 300px;
+}
+.NewsTest article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.NewsTitle {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    color: #FFFFFF;
+    z-index: 2;
+}
+.NewsTitle h2 {
+    color: #FFFFFF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.NewsTitle a {
+    min-width: fit-content;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000030;
+    z-index: 1;
+}
+
+/* Styling for the home page sidebar */
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 25%;
+}
+
+/* Styling for the Agenda sidebar */
+.Agenda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Sidebar article {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.Sidebar article section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Sidebar article p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.SidebarTitle {
+    background-color: var(--Orange);
+    color: #FFFFFF;
+    padding: 14px 15px;
+    border-radius: 15px 15px 0 0;
+    text-transform: uppercase;
+}
+.NewsDay {
+    background-color: var(--LightBlue);
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 50px;
+}
+.QuickAction {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the footer */
+.Footer {
+    background-color: var(--LightBlue);
+    display: flex;
+    flex-direction: column;
+    
+}
+.Footer .Sitemap {
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 140px;
+}
+.FooterLogo {
+    width: 75%;
+    padding: 0;
+    align-items: start
+}
+.FooterNav {
+    width: 25%;
+}
+.Copyright {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 140px;
+}

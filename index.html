@@ -4,20 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Markup - Eindopdracht</title>
+    <link rel="stylesheet" href="./CSS/index.css">
 </head>
 <body>
-    <header>
-        <nav class="Navigation"> 
-            <figure class="NavigationItems">
-                <a href="./index.html"><img src="Images/Logo.svg" alt="The site logo" title="The site logo"></a>
-            </figure>
-            <ul class="NavigationItems">
-                <li class="NavItem"><a href="">Home</a></li>
-                <li class="NavItem"><a href="./Vereniging/index.html">Vereniging</a></li>
-                <li class="NavItem"><a href="./Teams/index.html">TV-Series</a></li>
-                <li class="NavItem"><a href="./Contact/index.html">Contact</a></li>
-            </ul>
+    <header class="HeaderNav">
+        <nav class="Navigation">
+            <section class="NavigationGroup">
+                <a href="./index.html" class="NavigationItems">
+                    <img class="NavigationLogo" src="Images/Logo.svg" alt="The site logo" title="The site logo">
+                </a>
+                <ul class="NavigationItems">
+                    <li class="NavItem"><a href="">Home</a></li>
+                    <li class="NavItem"><a href="./Vereniging/index.html">Vereniging</a></li>
+                    <li class="NavItem"><a href="./Teams/index.html">TV-Series</a></li>
+                    <li class="NavItem"><a href="./Contact/index.html">Contact</a></li>
+                </ul>
+            </section>
+            <section class="NavigationGroup">
+                <a class="NavItemIcon" target="_blank" href="https://www.instagram.com/alvoco.alkmaar/"><img src="Images/Icons/instagram.svg" alt="Alvoco.nl"></a>
+                <a class="NavItemIcon" target="_blank" href="https://www.facebook.com/groups/127435160673120"><img src="Images/Icons/Facebook.svg" alt=""></a>
+                <a class="NavItemIcon" target="_blank" href="mailto:info@alvocotest.nl"><img src="Images/Icons/envelope-open.svg" alt=""></a>
+            </section>
         </nav>
     </header>
+
+
+    <main class="PageBody">
+        <section class="NewsTest">
+            <h2>Uitgelicht nieuws</h1>
+            <article>
+                <img src="./Images/AlvocoHeren3.png" alt="">
+                <section class="NewsTitle">
+                    <h2>Alvoco Heren 3 wint van Relay Heren 3</h2>
+                    <a href="#" class="btn btn-blue">lees verder</a>
+                </section>
+                <section class="overlay"></section>
+            </article>
+            <article>
+                <img src="./Images/Dames1.png" alt="">
+                <section class="NewsTitle">
+                    <h2>Dames 1 heeft een bonusspeler uitt CMV4</h2>
+                    <a href="#" class="btn btn-blue">lees verder</a>
+                </section>
+                <section class="overlay"></section>
+            </article>
+            <article>
+                <img src="./Images/Vrijwilligers.png" alt="">
+                <section class="NewsTitle">
+                    <h2>Vrijwilligers Colin, Eef en Bas hebben de 2VT training gehaald</h2>
+                    <a href="#" class="btn btn-blue">lees verder</a>
+                </section>
+                <section class="overlay"></section>
+            </article>
+        </section>
+        <aside class="Sidebar">
+            <section class="Agenda">
+                <h2 class="SidebarTitle">Agenda</h2>
+                <article>
+                    <p class="NewsDay">03</p>
+                    <p class="NewsMonth">feb</p>
+                    <section>
+                        <p>Algemene ledenvergadering</p>
+                        <p>19:00</p>
+                    </section>
+                </article>
+                <article>
+                    <p class="NewsDay">03</p>
+                    <p class="NewsMonth">feb</p>
+                    <section>
+                        <p>Algemene ledenvergadering</p>
+                        <p>19:00</p>
+                    </section>
+                </article>
+                <article>
+                    <p class="NewsDay">03</p>
+                    <p class="NewsMonth">feb</p>
+                    <section>
+                        <p>Algemene ledenvergadering</p>
+                        <p>19:00</p>
+                    </section>
+                </article>
+                <article>
+                    <p class="NewsDay">03</p>
+                    <p class="NewsMonth">feb</p>
+                    <section>
+                        <p>Algemene ledenvergadering</p>
+                        <p>19:00</p>
+                    </section>
+                </article>
+            </section>
+            
+            <section class="QuickAction">
+                <h2 class="SidebarTitle">Snel Naar</h2>
+                <a href="" class="btn-icon">
+                    Lid worden
+                    <img src="./Images/Icons/arrow-forward.svg">
+                </a>
+                <a href="#" class=""> </a>
+            </section>
+        </aside>
+    </main>
+    <footer class="Footer">
+        <section class="Sitemap">
+            <section class="FooterLogo">
+                <a href="./index.html">
+                    <img src="./Images/Logo.svg" alt="The website logo" class="NavigationLogo">
+                </a>
+            </section>
+
+            <aside class="FooterNav">
+                <ul class="List">
+                    <!-- add the icons -->
+                    <li><a href="#"><img class="ListIcon" src="./Images/Icons/Documentsvg.svg">Privacy statement & Cookies</a></li>
+                    <li><a href="#"><img class="ListIcon" src="./Images/Icons/Documentsvg.svg">Huisregels</a></li>
+                    <li><a href=""><img class="ListIcon" src="./Images/Icons/map-marker.svg">Vondelstraat 35, 1813 AA Alkmaar</a></li>
+                    <li><a href="mailto:info@alvocotest.nl"><img class="ListIcon" src="./Images/Icons/Envelope-open-filled.svg">info@alvocotest.nl</a></li>
+                    <li><a href="https://www.instagram.com/alvoco.alkmaar/"><img class="ListIcon" src="./Images/Icons/instagram.svg">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/groups/127435160673120"><img class="ListIcon" src="./Images/Icons/Facebook.svg">Facebook</a></li>
+                </ul>
+            </aside>
+
+        </section>
+        <p class="Copyright">Copyright Alvoco &copy; 2025 | Site: Colin Bloemendaal</p>
+    </footer>
 </body>
 </html>
