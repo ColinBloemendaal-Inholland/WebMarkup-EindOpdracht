@@ -62,6 +62,9 @@ body {
     border-radius: 5px;
     transition-duration: 300ms;
 }
+.btn:hover {
+    text-decoration: none;
+}
 .btn-blue { background-color: var(--LightBlue); }
 .btn-blue:hover { background-color: var(--DarkBlue); }
 .btn-orange { background-color: var(--Orange); }
@@ -265,6 +268,82 @@ body {
 }
 .QuickAction a {
     text-decoration: none;
+}
+
+
+/* Styling for the Teams page */
+.TeamsCategories {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 125px;
+}
+.TeamsCategorie {
+    display: flex;
+    flex-direction: column;
+}
+.TeamsCatTitle {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    background-color: var(--Orange);
+    padding: 15px 14px;
+    border-radius: 15px 15px 0 0;
+}
+.TeamsCatTitle h2 {
+    color: #FFFFFF;
+}
+.Teams {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Styling for individual teams */
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+.flexcol {
+    display: flex;
+    flex-direction: column;
+}
+.TeamInfo, .Members {
+    padding: 10px 25px;
+    gap: 10px;
+}
+.TeamInfo p, .Members p {
+    color: #ffffff;
+    font-size: 16px;
+}
+.TeamInfo {
+    background-color: var(--Orange);
+}
+.Members {
+    border-bottom: 2px solid var(--DarkBlue);
+    background-color: var(--LightBlue);
+}
+.Members:first-of-type {
+    border-top: 2px solid var(--DarkBlue);
+}
+.PlayerNumber {
+    min-width: 2ch;
+}
+.PlayerName {
+    min-width: 150px;
+}
+.PlayerPosition {
+    min-width: 150px;
 }
 
 /* Styling for the footer */
