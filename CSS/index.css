@@ -9,7 +9,7 @@
 * {margin: 0; padding: 0;}
 
 /* Styling for the texts/fonts */
-h1, h2, h3, h4, h5, h6, span, p {
+h1, h2, h3, h4, h5, h6, span, p, a {
     color: black;
     text-decoration: none;
 }
@@ -20,6 +20,7 @@ h4 { font-size: 18px; }
 h5 { font-size: 14px; }
 h6 { font-size: 8px; }
 p { font-size: 12px; }
+a:hover {text-decoration: underline;}
 body {
     min-height: 100vh;
     width: 100vw;
@@ -39,14 +40,10 @@ body {
 }
 .List li a {
     color: #FFFFFF;
-    text-decoration: none;
     font-size: 20px;
     display: flex;
     flex-direction: row;
     gap: 5px;
-}
-.List li a:hover {
-    text-decoration: underline;
 }
 .ListIcon {
     color: #FFFFFF;
@@ -88,14 +85,12 @@ body {
 }
 
 /* Styling for the header navigation */
-.HeaderNav {
-    background-color: var(--LightBlue);
-}
 .Navigation {
     align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 0 140px;
+    background-color: var(--LightBlue);
 }
 .NavigationGroup {
     align-items: center;
@@ -132,6 +127,34 @@ body {
 .NavItemIcon img {
     width: 25px;
     height: 25px;
+}
+
+/* Styling for the header jumbotron */
+.Jumbotron {
+    display: flex;
+    flex-direction: column;
+    max-height: 370px;
+    overflow: hidden;
+    position: relative;
+}
+.Jumbotron img {
+    object-fit: cover;
+    overflow: hidden;
+}
+.Breadcrumbs {
+    position: absolute;
+    bottom: 100px;
+    padding: 0 140px;
+    z-index: 2;
+}
+.Breadcrumbs h1, .Breadcrumbs p, .Breadcrumbs a {
+    color: #FFFFFF;
+}
+.Breadcrumbs h1 {
+    font-size: 40px;
+}
+.Breadcrumbs p {
+    font-size: 16px;
 }
 
 
@@ -190,9 +213,10 @@ body {
     right: 0;
     background-color: #00000030;
     z-index: 1;
+
 }
 
-/* Styling for the home page sidebar */
+/* Styling for the sidebar */
 .Sidebar {
     display: flex;
     flex-direction: column;
@@ -238,6 +262,9 @@ body {
 .QuickAction {
     display: flex;
     flex-direction: column;
+}
+.QuickAction a {
+    text-decoration: none;
 }
 
 /* Styling for the footer */
