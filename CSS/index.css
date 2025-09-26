@@ -85,6 +85,36 @@ body {
 .btn-icon:hover {
     color: var(--Orange);
     border-color: var(--Orange);
+    text-decoration: none;
+}
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+.flexcol {
+    display: flex;
+    flex-direction: column;
+}
+.Section {
+    width: 100%;
+}
+.SectionTitle {
+    padding: 15px 14px;
+    background-color: var(--Orange);
+    border-radius: 15px 15px 0 0;
+    text-transform: uppercase;
+}
+.SectionTitle h2 {
+    color: #FFFFFF;
+}
+.RowArticles {
+    gap: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.ColArticles {
+    gap: 10px;
 }
 
 /* Styling for the header navigation */
@@ -163,27 +193,22 @@ body {
 
 .PageBody {
     padding: 0 140px;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-grow: 3;
-    gap: 25px;
-    
+    gap: 125px;
 }
 /* Styling for the home page News posts */
 .NewsTest {
-    display: flex;
-    flex-direction: column;
     gap: 25px;
-    width: 75%;
+    flex-grow: 4;
+    /* width: 75%; */
 }
-.NewsTest article {
+.NewsArticle {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
     max-height: 300px;
 }
-.NewsTest article img {
+.NewsArticle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -193,7 +218,6 @@ body {
     bottom: 25px;
     left: 25px;
     right: 25px;
-    display: flex;
     gap: 15px;
     justify-content: space-between;
     color: #FFFFFF;
@@ -204,9 +228,6 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-}
-.NewsTitle a {
-    min-width: fit-content;
 }
 .overlay {
     position: absolute;
@@ -221,40 +242,19 @@ body {
 
 /* Styling for the sidebar */
 .Sidebar {
-    display: flex;
-    flex-direction: column;
     gap: 25px;
-    width: 25%;
+    flex-grow: 1;
+    /* width: 25%; */
 }
 
 /* Styling for the Agenda sidebar */
-.Agenda {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.Sidebar article {
-    display: flex;
-    flex-direction: row;
+.AgendaItem {
     gap: 10px;
     align-items: center;
 }
-.Sidebar article section {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.Sidebar article p {
+.AgendaItem p {
     font-weight: bold;
     font-size: 18px;
-}
-
-.SidebarTitle {
-    background-color: var(--Orange);
-    color: #FFFFFF;
-    padding: 14px 15px;
-    border-radius: 15px 15px 0 0;
-    text-transform: uppercase;
 }
 .NewsDay {
     background-color: var(--LightBlue);
@@ -262,62 +262,14 @@ body {
     padding: 15px;
     border-radius: 50px;
 }
-.QuickAction {
-    display: flex;
-    flex-direction: column;
-}
-.QuickAction a {
-    text-decoration: none;
-}
 
-
-/* Styling for the Teams page */
-.TeamsCategories {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 125px;
-}
-.TeamsCategorie {
-    display: flex;
-    flex-direction: column;
-}
-.TeamsCatTitle {
-    display: flex;
-    flex-direction: row;
-    left: 0;
-    right: 0;
-    background-color: var(--Orange);
-    padding: 15px 14px;
-    border-radius: 15px 15px 0 0;
-}
-.TeamsCatTitle h2 {
-    color: #FFFFFF;
-}
-.Teams {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+/* Styling for the teams archive page */
 .Team {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 15px;
 }
-
 
 /* Styling for individual teams */
-.flexrow {
-    display: flex;
-    flex-direction: row;
-}
-.flexcol {
-    display: flex;
-    flex-direction: column;
-}
+
 .TeamInfo, .Members {
     padding: 10px 25px;
     gap: 10px;
