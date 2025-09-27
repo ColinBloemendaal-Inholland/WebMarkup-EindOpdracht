@@ -244,7 +244,6 @@ body {
 .Sidebar {
     gap: 25px;
     flex-grow: 1;
-    /* width: 25%; */
 }
 
 /* Styling for the Agenda sidebar */
@@ -255,6 +254,7 @@ body {
 .AgendaItem p {
     font-weight: bold;
     font-size: 18px;
+    text-align: start;
 }
 .NewsDay {
     background-color: var(--LightBlue);
@@ -269,7 +269,9 @@ body {
 }
 
 /* Styling for individual teams */
-
+ .idkwtct {
+    justify-content: space-between;
+ }
 .TeamInfo, .Members {
     padding: 10px 25px;
     gap: 10px;
@@ -296,6 +298,48 @@ body {
 }
 .PlayerPosition {
     min-width: 150px;
+}
+.SupportStaff {
+    flex-grow: 1;
+}
+.Matches {
+    flex-grow: 7;
+}
+.SupportStaff h2 {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+}
+.StaffMembers {
+    border-bottom: 2px solid var(--DarkBlue);
+    background-color: var(--LightBlue);
+    padding: 10px 25px;
+    gap: 10px;
+    justify-content: space-between;
+}
+.StaffMembers:first-of-type {
+    border-top: 2px solid var(--DarkBlue);
+}
+.StaffMembers p {
+    color: #ffffff;
+    font-size: 16px;
+}
+.TeamTrainingen {
+    border-bottom: 2px solid var(--DarkBlue);
+    background-color: var(--LightBlue);
+    padding: 10px 25px;
+    gap: 10px;
+    justify-content: space-between;
+}
+.TrainingInfo {
+    gap: 20px;
+}
+.TeamTrainingen:first-of-type {
+    border-top: 2px solid var(--DarkBlue);
+}
+.TeamTrainingen p {
+    color: #ffffff;
+    font-size: 16px;
 }
 
 /* Styling for the footer */
