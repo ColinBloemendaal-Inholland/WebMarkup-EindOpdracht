@@ -43,7 +43,7 @@ body {
     font-size: 20px;
     gap: 5px; 
 }
-.List li, .List li a {
+/* .List li, .List li a {
     color: #FFFFFF;
     font-size: 20px;
     gap: 5px;
@@ -51,7 +51,7 @@ body {
 .List li a {
     display: flex;
     flex-direction: row;
-}
+} */
 .ListIcon {
     color: #FFFFFF;
     width: 18px;
@@ -237,6 +237,9 @@ body {
     gap: 25px;
     flex-grow: 4;
     /* width: 75%; */
+}
+.NewsTest {
+    text-align: start;
 }
 .NewsArticle {
     position: relative;
