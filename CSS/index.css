@@ -38,12 +38,19 @@ body {
     gap: 10px;
     list-style-type: none;
 }
-.List li a {
+.ListItem, .ListItem a {
     color: #FFFFFF;
     font-size: 20px;
+    gap: 5px; 
+}
+.List li, .List li a {
+    color: #FFFFFF;
+    font-size: 20px;
+    gap: 5px;
+}
+.List li a {
     display: flex;
     flex-direction: row;
-    gap: 5px;
 }
 .ListIcon {
     color: #FFFFFF;
@@ -190,6 +197,35 @@ body {
     font-size: 16px;
 }
 
+/* Styling for the footer */
+.Footer {
+    background-color: var(--LightBlue);
+    display: flex;
+    flex-direction: column;
+    
+}
+.Footer .Sitemap {
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 140px;
+}
+.FooterLogo {
+    width: 75%;
+    padding: 0;
+    align-items: start
+}
+.FooterNav {
+    width: 25%;
+}
+.Copyright {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 140px;
+}
+
 
 .PageBody {
     padding: 0 140px;
@@ -299,12 +335,6 @@ body {
 .PlayerPosition {
     min-width: 150px;
 }
-.SupportStaff {
-    flex-grow: 1;
-}
-.Matches {
-    flex-grow: 7;
-}
 .SupportStaff h2 {
     font-size: 16px;
     font-weight: normal;
@@ -341,32 +371,48 @@ body {
     color: #ffffff;
     font-size: 16px;
 }
-
-/* Styling for the footer */
-.Footer {
+.Match {
+    align-items: center;
+}
+.MatchTeams {
     background-color: var(--LightBlue);
-    display: flex;
-    flex-direction: column;
-    
+    justify-content: space-around;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
 }
-.Footer .Sitemap {
-    align-items: start;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px 140px;
-}
-.FooterLogo {
-    width: 75%;
-    padding: 0;
-    align-items: start
-}
-.FooterNav {
-    width: 25%;
-}
-.Copyright {
+.MatchTeams p {
     color: #FFFFFF;
-    font-size: 16px;
-    text-align: center;
-    padding: 15px 140px;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px;
+    align-items: center;
+}
+.MatchTeams .MatchVs {
+    background-color: var(--DarkBlue);
+}
+
+.Matches {
+    min-width: 500px;
+}
+.Matches section {
+    gap: 15px;
+}
+.MatchDetails {
+    background-color: var(--DarkBlue);
+    width: 80%;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    padding: 10px 0;
+}
+.MatchDetails ul {
+    align-items: center;
+}
+.bleh {
+    gap: 50px;
+}
+.SupportStaff {
+    width: fit-content;
+}
+.SupportStaff, .Matches {
+    flex-grow: 1;
 }
