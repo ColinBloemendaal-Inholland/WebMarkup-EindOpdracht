@@ -1,0 +1,5 @@
+Student name: Colin Bloemendaal
+Student number: 700949
+Student class: INF1A
+GitHub Repository: https://github.com/ColinBloemendaal-Inholland/WebMarkup-EindOpdracht
+GitHub Pages URL: https://colinbloemendaal-inholland.github.io/WebMarkup-EindOpdracht/
