@@ -422,3 +422,40 @@ body {
 .AboutUs {
     text-align: center;
 }
+
+.Contact {
+    flex-grow: 4;
+}
+.Contactform {
+    padding: 15px;
+    background-color: var(--LightBlue);
+}
+.Contactform input, .Contactform input::placeholder, .Contactform textarea {
+    color: #00000060;
+    font-size: 16px;
+    font-weight: bold;
+}
+.Contactform input[type=submit] {
+    border: 2px solid var(--DarkBlue);
+    background-color: var(--LightBlue);
+    color: #FFFFFF;
+    transition: 300ms;
+}
+.Contactform input[type=submit]:hover {
+    background-color: var(--DarkBlue);
+}
+.Contactform input, .Contactform textarea  {
+    background: #FFF;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid var(--DarkBlue);
+}
+.Contactform textarea {
+    resize: vertical;
+}
+
+.Contactform label {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: start;
+}
