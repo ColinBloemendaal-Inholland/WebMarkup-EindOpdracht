@@ -303,6 +303,11 @@ body {
 /* Styling for the teams archive page */
 .Team {
     align-items: center;
+    overflow: hidden;
+}
+.Team img {
+    max-height: 200px;
+    object-fit: cover;
 }
 
 /* Styling for individual teams */
@@ -458,4 +463,11 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     text-align: start;
+}
+
+.Grid {
+    display: grid;
+    justify-content: space-between;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, 250px);
 }
