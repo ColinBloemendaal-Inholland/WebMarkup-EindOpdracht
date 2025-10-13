@@ -43,15 +43,6 @@ body {
     font-size: 20px;
     gap: 5px; 
 }
-/* .List li, .List li a {
-    color: #FFFFFF;
-    font-size: 20px;
-    gap: 5px;
-}
-.List li a {
-    display: flex;
-    flex-direction: row;
-} */
 .ListIcon {
     color: #FFFFFF;
     width: 18px;
@@ -94,6 +85,8 @@ body {
     border-color: var(--Orange);
     text-decoration: none;
 }
+
+/* Flex styling */
 .flexrow {
     display: flex;
     flex-direction: row;
@@ -102,6 +95,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* Grid styling */
+.grid {
+    display: grid;
+}
+
 .Section {
     width: 100%;
 }
@@ -202,7 +201,6 @@ body {
     background-color: var(--LightBlue);
     display: flex;
     flex-direction: column;
-    
 }
 .Footer .Sitemap {
     align-items: start;
@@ -314,32 +312,24 @@ body {
  .idkwtct {
     justify-content: space-between;
  }
-.TeamInfo, .Members {
+.TeamGridContainer {
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+.TeamGrid {
     padding: 10px 25px;
+    grid-template-columns: 2ch 4fr 4fr;
     gap: 10px;
 }
-.TeamInfo p, .Members p {
-    color: #ffffff;
-    font-size: 16px;
-}
-.TeamInfo {
-    background-color: var(--Orange);
-}
-.Members {
-    border-bottom: 2px solid var(--DarkBlue);
+.TeamGridMembers {
     background-color: var(--LightBlue);
 }
-.Members:first-of-type {
-    border-top: 2px solid var(--DarkBlue);
+.TeamGrid p {
+    color: #FFF;
+    font-size: 16px;
 }
-.PlayerNumber {
-    min-width: 2ch;
-}
-.PlayerName {
-    min-width: 150px;
-}
-.PlayerPosition {
-    min-width: 150px;
+.TeamGridDes {
+    background-color: var(--Orange);
 }
 .SupportStaff h2 {
     font-size: 16px;
