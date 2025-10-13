@@ -50,7 +50,7 @@ body {
 }
 
 /* Styling for the default buttons */
-.btn {
+.Btn {
     width: fit-content;
     padding: 8px 18px;
     text-decoration: none;
@@ -60,14 +60,14 @@ body {
     border-radius: 5px;
     transition-duration: 300ms;
 }
-.btn:hover {
+.Btn:hover {
     text-decoration: none;
 }
-.btn-blue { background-color: var(--LightBlue); }
-.btn-blue:hover { background-color: var(--DarkBlue); }
-.btn-orange { background-color: var(--Orange); }
-.btn-orange:hover { background-color: var(--DarkOrange); }
-.btn-icon {
+.BtnBlue { background-color: var(--LightBlue); }
+.BtnBlue:hover { background-color: var(--DarkBlue); }
+.BtnOrange { background-color: var(--Orange); }
+.BtnOrange:hover { background-color: var(--DarkOrange); }
+.BtnIcon {
     display: flex;
     flex-direction: row;
     color: var(--LightBlue);
@@ -80,25 +80,30 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
-.btn-icon:hover {
+.BtnIcon:hover {
     color: var(--Orange);
     border-color: var(--Orange);
     text-decoration: none;
 }
 
 /* Flex styling */
-.flexrow {
+.FlexRow {
     display: flex;
     flex-direction: row;
 }
-.flexcol {
+.FlexCol {
     display: flex;
     flex-direction: column;
 }
 
 /* Grid styling */
-.grid {
-    display: grid;
+.Grid {
+    display: Grid;
+}
+.GridContainer {
+    justify-content: space-between;
+    gap: 25px;
+    Grid-template-columns: repeat(auto-fill, 250px);
 }
 
 .Section {
@@ -264,7 +269,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
 }
-.overlay {
+.Overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -309,8 +314,9 @@ body {
 }
 
 /* Styling for individual teams */
- .idkwtct {
+ .TeamSpacer {
     justify-content: space-between;
+    gap: 50px;
  }
 .TeamGridContainer {
     border-radius: 15px 15px 0 0;
@@ -318,7 +324,7 @@ body {
 }
 .TeamGrid {
     padding: 10px 25px;
-    grid-template-columns: 2ch 4fr 4fr;
+    Grid-template-columns: 2ch 4fr 4fr;
     gap: 10px;
 }
 .TeamGridMembers {
@@ -403,9 +409,6 @@ body {
 .MatchDetails ul {
     align-items: center;
 }
-.bleh {
-    gap: 50px;
-}
 .SupportStaff {
     width: fit-content;
 }
@@ -421,43 +424,36 @@ body {
 .Contact {
     flex-grow: 4;
 }
-.Contactform {
+.ContactForm {
     padding: 15px;
     background-color: var(--LightBlue);
 }
-.Contactform input, .Contactform input::placeholder, .Contactform textarea {
+.ContactForm input, .ContactForm input::placeholder, .ContactForm textarea {
     color: #00000060;
     font-size: 16px;
     font-weight: bold;
 }
-.Contactform input[type=submit] {
+.ContactForm input[type=submit] {
     border: 2px solid var(--DarkBlue);
     background-color: var(--LightBlue);
     color: #FFFFFF;
     transition: 300ms;
 }
-.Contactform input[type=submit]:hover {
+.ContactForm input[type=submit]:hover {
     background-color: var(--DarkBlue);
 }
-.Contactform input, .Contactform textarea  {
+.ContactForm input, .ContactForm textarea  {
     background: #FFF;
     padding: 10px;
     border-radius: 15px;
     border: 2px solid var(--DarkBlue);
 }
-.Contactform textarea {
+.ContactForm textarea {
     resize: vertical;
 }
 
-.Contactform label {
+.ContactForm label {
     color: #FFFFFF;
     font-size: 16px;
     text-align: start;
-}
-
-.Grid {
-    display: grid;
-    justify-content: space-between;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fill, 250px);
 }
