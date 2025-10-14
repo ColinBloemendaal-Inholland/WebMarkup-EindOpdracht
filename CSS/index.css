@@ -188,17 +188,19 @@ body {
 .Jumbotron {
     display: flex;
     flex-direction: column;
-    max-height: 370px;
+    /* max-height: 370px; */
+    height: 300px;
     overflow: hidden;
     position: relative;
 }
 .Jumbotron img {
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
 .Breadcrumbs {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     padding: var(--PageXLargePadding);
     z-index: 2;
 }
@@ -502,6 +504,12 @@ body {
     .TeamPicture, .Jumbotron .Desktop {
         display: none;
     }
+    .Jumbotron {
+        height: 200px;
+    }
+    .Breadcrumbs {
+        bottom: 20px;
+    }
     .Jumbotron .Tablet, .Jumbotron .Mobile {
         display: block;
         object-position: top;
@@ -528,6 +536,12 @@ body {
     .NavigationGroup {
         width: 100%;
         justify-content: center;
+    }
+    .Jumbotron {
+        height: 150px;
+    }
+    .Breadcrumbs {
+        bottom: 20px;
     }
     .Sidebar {
         flex-direction: row;
@@ -574,6 +588,12 @@ body {
     .Sitemap {
         flex-wrap: wrap;
         gap: 25px;
+    }
+    .Jumbotron {
+        height: 150px;
+    }
+    .Breadcrumbs {
+        bottom: 20px;
     }
     .Footer, .Copyright {
         padding: 25px 0;
@@ -627,6 +647,12 @@ body {
     .Sitemap {
         flex-wrap: wrap;
         gap: 25px;
+    }
+    .Jumbotron {
+        height: 150px;
+    }
+    .Breadcrumbs {
+        bottom: 20px;
     }
     .Footer, .Copyright {
         padding: 25px 0;
