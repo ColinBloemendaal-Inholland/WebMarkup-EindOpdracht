@@ -499,6 +499,25 @@ body {
     color: #FFF;
     padding: 5px;
 }
+/* Cookies styling */
+.Cookies {
+    position: fixed;
+    z-index: 9999;
+    padding: 50px;
+    background-color: var(--DarkBlue);
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+.CookiesOption {
+    justify-content: center;
+}
+.CookiesOption input[type=radio] {
+    display: none;
+}
+.Cookies p {
+    color: #FFF;
+    font-size: 16px;
+}
 
 @media only screen and (min-width: 981px) and (max-width: 1200px) {
     .Navigation, .Breadcrumbs, .PageBody, .Sitemap, .Copyright {
@@ -583,6 +602,11 @@ body {
     .ContactForm input {
         flex-grow: 1;
     }
+    .Cookies {
+        top: calc(40% - 40px);
+        left: calc(40% - 40px);
+        padding: 25px;
+    }
 }
 @Media only screen and (Min-width: 578px) and (max-width: 768px) {
     .Navigation, .Breadcrumbs, .PageBody, .Sitemap, .Copyright {
@@ -637,6 +661,11 @@ body {
     }
     .ContactForm input {
         flex-grow: 1;
+    }
+    .Cookies {
+        top: calc(40% - 40px);
+        left: calc(40% - 40px);
+        padding: 25px;
     }
 }
 @media only screen and (max-width: 577px) {
@@ -706,5 +735,10 @@ body {
     }
     .ContactForm input {
         flex-grow: 1;
+    }
+    .Cookies {
+        top: calc(40% - 40px);
+        left: calc(40% - 40px);
+        padding: 25px;
     }
 }
