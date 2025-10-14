@@ -91,7 +91,10 @@ body {
     border-color: var(--Orange);
     text-decoration: none;
 }
-
+/* Mobile Display toggle */
+.Mobile {
+    display: none;
+}
 /* Flex styling */
 .FlexRow {
     display: flex;
@@ -336,6 +339,16 @@ body {
 .TeamGridContainer {
     border-radius: 15px 15px 0 0;
     overflow: hidden;
+    flex-grow: 1;
+}
+.TeamPicture {
+    flex-grow: 2;
+}
+.TeamPicture img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    max-height: 350px;
 }
 .TeamGrid {
     padding: 10px 25px;
@@ -483,6 +496,19 @@ body {
     .Sidebar section {
         width: 50%;
     }
+    .TeamGridContainer {
+        flex-grow: 1;
+    }
+    .TeamPicture, .Jumbotron .Desktop {
+        display: none;
+    }
+    .Jumbotron .Tablet, .Jumbotron .Mobile {
+        display: block;
+        object-position: top;
+    }
+    body, .PageBody {
+        gap: 100px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 980px) {
@@ -514,6 +540,16 @@ body {
     }
     .SectionTitle {
         text-align: center;
+    }
+    .TeamPicture, .Jumbotron .Desktop {
+        display: none;
+    }
+    .Jumbotron .Tablet, .Jumbotron .Mobile {
+        display: block;
+        object-position: top;
+    }
+    body, .PageBody {
+        gap: 75px;
     }
 }
 @Media only screen and (Min-width: 578px) and (max-width: 768px) {
@@ -551,6 +587,16 @@ body {
     .SectionTitle {
         text-align: center;
     }
+    .TeamPicture, .Jumbotron .Desktop {
+        display: none;
+    }
+    .Jumbotron .Tablet, .Jumbotron .Mobile {
+        display: block;
+        object-position: top;
+    }
+    body, .PageBody {
+        gap: 50px;
+    }
 }
 @media only screen and (max-width: 577px) {
     .Navigation, .Breadcrumbs, .PageBody, .Sitemap, .Copyright {
@@ -587,5 +633,15 @@ body {
     }
     .SectionTitle {
         text-align: center;
+    }
+    .TeamPicture, .Jumbotron .Desktop {
+        display: none;
+    }
+    .Jumbotron .Tablet, .Jumbotron .Mobile {
+        display: block;
+        object-position: top;
+    }
+    body, .PageBody {
+        gap: 50px;
     }
 }
