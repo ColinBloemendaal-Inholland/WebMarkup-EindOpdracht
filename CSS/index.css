@@ -470,8 +470,10 @@ body {
     font-weight: bold;
 }
 .ContactForm input[type=submit] {
-    border: 2px solid var(--DarkBlue);
-    background-color: var(--LightBlue);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--DarkBlue);
+    background-color: var(--Orange);
     color: #FFFFFF;
     transition: 300ms;
 }
