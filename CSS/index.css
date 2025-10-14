@@ -509,6 +509,9 @@ body {
     body, .PageBody {
         gap: 100px;
     }
+    .ContactForm input {
+        flex-grow: 1;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 980px) {
@@ -550,6 +553,9 @@ body {
     }
     body, .PageBody {
         gap: 75px;
+    }
+    .ContactForm input {
+        flex-grow: 1;
     }
 }
 @Media only screen and (Min-width: 578px) and (max-width: 768px) {
@@ -597,6 +603,9 @@ body {
     body, .PageBody {
         gap: 50px;
     }
+    .ContactForm input {
+        flex-grow: 1;
+    }
 }
 @media only screen and (max-width: 577px) {
     .Navigation, .Breadcrumbs, .PageBody, .Sitemap, .Copyright {
@@ -643,5 +652,21 @@ body {
     }
     body, .PageBody {
         gap: 50px;
+    }
+    .SectionTitle h2 {
+        font-size: 24px;
+    }
+    .MatchTeams p {
+        font-size: 16px;
+    }
+    .ListItem a, .ListItem {
+        font-size: 16px;
+    }
+    .Matches {
+        min-width: 0;
+        flex-grow: 1;
+    }
+    .ContactForm input {
+        flex-grow: 1;
     }
 }
