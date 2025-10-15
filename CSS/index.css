@@ -659,7 +659,7 @@ body {
         object-position: top;
     }
     body, .PageBody {
-        gap: 50px;
+        gap: 50px; 
     }
     .ContactForm input {
         flex-grow: 1;
