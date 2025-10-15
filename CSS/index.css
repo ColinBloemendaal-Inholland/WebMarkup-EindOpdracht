@@ -18,13 +18,13 @@ h1, h2, h3, h4, h5, h6, span, p, a {
     color: black;
     text-decoration: none;
 }
-h1 { font-size: 36px; }
-h2 { font-size: 32px; }
-h3 { font-size: 24px; }
-h4 { font-size: 18px; }
-h5 { font-size: 14px; }
-h6 { font-size: 8px; }
-p { font-size: 12px; }
+h1 { font-size: 2.2em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: 0.875em; }
+h6 { font-size: 0.5em; }
+p { font-size: 0.75em; }
 a:hover {text-decoration: underline;}
 
 html {overflow-x: hidden;}
@@ -46,7 +46,7 @@ body {
 }
 .ListItem, .ListItem a {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1.25em;
     gap: 5px; 
 }
 .ListItem a {
@@ -64,7 +64,7 @@ body {
     padding: 8px 18px;
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 1em;;
     text-align: center;
     border-radius: 5px;
     transition-duration: 300ms;
@@ -86,7 +86,7 @@ body {
     text-decoration: none;
     transition-duration: 300ms;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: bold;
 }
 .BtnIcon:hover {
@@ -163,7 +163,7 @@ body {
     list-style-type: none;
 }
 .NavItem a {
-    font-size: 16px;
+    font-size: 1em;;
     color: #FFFFFF;
     text-decoration: none;
     padding: 5px 10px;
@@ -211,12 +211,12 @@ body {
     color: #FFFFFF;
 }
 .Breadcrumbs h1 {
-    font-size: 40px;
+    font-size: 2.5em;
     letter-spacing: 0.01em;
     line-height: 48px;
 }
 .Breadcrumbs p {
-    font-size: 16px;
+    font-size: 1em;;
 }
 
 /* Styling for the footer */
@@ -246,7 +246,7 @@ body {
 }
 .Copyright p {
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1em;;
     text-align: center;
     padding: 15px;
 }
@@ -318,7 +318,7 @@ body {
 }
 .AgendaItem p {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.12em;
     text-align: start;
 }
 .NewsDay {
@@ -367,13 +367,13 @@ body {
 }
 .TeamGrid p {
     color: #FFF;
-    font-size: 16px;
+    font-size: 1em;;
 }
 .TeamGridDes {
     background-color: var(--Orange);
 }
 .SupportStaff h2 {
-    font-size: 16px;
+    font-size: 1em;;
     font-weight: normal;
     text-transform: none;
 }
@@ -389,7 +389,7 @@ body {
 }
 .StaffMembers p {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1em;;
 }
 .TeamTrainingen {
     border-bottom: 2px solid var(--DarkBlue);
@@ -406,7 +406,7 @@ body {
 }
 .TeamTrainingen p {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1em;;
 }
 .Match {
     align-items: center;
@@ -419,7 +419,7 @@ body {
 }
 .MatchTeams p {
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: normal;
     padding: 10px;
     align-items: center;
@@ -466,7 +466,7 @@ body {
 }
 .ContactForm input, .ContactForm input::placeholder, .ContactForm textarea {
     color: #00000060;
-    font-size: 16px;
+    font-size: 1em;;
     font-weight: bold;
 }
 .ContactForm input[type=submit] {
@@ -492,7 +492,7 @@ body {
 
 .ContactForm label {
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1em;;
     text-align: start;
 }
 .ContactForm fieldset {
@@ -518,7 +518,7 @@ body {
 }
 .Cookies p {
     color: #FFF;
-    font-size: 16px;
+    font-size: 1em;;
 }
 
 @media only screen and (min-width: 981px) and (max-width: 1200px) {
@@ -723,13 +723,13 @@ body {
         gap: 50px;
     }
     .SectionTitle h2 {
-        font-size: 24px;
+        font-size: 1.5em;
     }
     .MatchTeams p {
-        font-size: 16px;
+        font-size: 1em;;
     }
     .ListItem a, .ListItem {
-        font-size: 16px;
+        font-size: 1em;;
     }
     .Matches {
         min-width: 0;
